@@ -41,7 +41,7 @@ export default function Navbar() {
             label="Log In"
             bgColor="bg-white"
             color="text-black"
-            borderColor="border-gray-100"
+            borderColor="border-gray-custom-100"
             textSize="text-xs"
           />
           <Button label="Try for Free" textSize="text-xs" />

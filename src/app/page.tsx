@@ -1,10 +1,10 @@
-import Header from '@/components/layout/header';
+import Hero from '@/components/layout/hero';
 import Image from 'next/image';
 
 export default function Home() {
   return (
     <main>
-      <Header />
+      <Hero />
     </main>
   );
 }
