@@ -1,13 +1,13 @@
 import Image from 'next/image';
-import Button from '../ui/button';
+import Button from '../../components/ui/button';
 
 export default function Hero() {
   return (
-    <section className="bg-gray-custom-50">
-      <div className="py-16 max-h-[900px] max-w-screen-wide mx-auto">
-        <div className="ml-4 grid gap-8 lg:grid-cols-2 relative">
-          <div className="flex flex-col">
-            <h1 className="text-blue-dark font-bold text-3xl md:text-4xl lg:text-5xl lg:leading-normal xl:text-[64px] leading-tight tracking-[-0.89px] md:max-w-lg lg:max-w-[640px] mb-6">
+    <section className="bg-secondary pl-4 overflow-hidden">
+      <div className="py-20 max-w-screen-wide mx-auto">
+        <div className="flex flex-col gap-8 max-lg:pr-4 lg:flex-row justify-center items-center mx-auto">
+          <div className="flex flex-col max-lg:justify-center max-lg:items-center max-lg:text-center">
+            <h1 className="text-primary font-bold text-4xl leading-snug sm:text-[54px] xl:text-[64px] xl:leading-[74px] tracking-[-0.89px] md:w-[540px] xl:w-[640px] mb-8">
               Bringing companies and customers together, anywhere
             </h1>
             <p className="text-lg max-w-[478px] mb-16">
@@ -15,16 +15,16 @@ export default function Hero() {
               revenue with enterprise-grade links built to acquire and engage
               cutomers.
             </p>
-            <form>
-              <div>
+            <form className="mb-6 w-full">
+              <div className="max-sm:flex flex-col">
                 <input
                   type="text"
                   placeholder="Enter you email"
-                  className="p-6 w-[457px] rounded-lg border-2 border-gray-custom-100 outline-gray-custom-100"
+                  className="p-4 sm:p-5 rounded-lg border-2 w-full sm:w-[457px] border-gray-custom-100 outline-gray-custom-100"
                 />
                 <Button
                   label="Try for Free"
-                  className="px-6 py-4 -m-[164px] rounded-lg"
+                  className="px-6 py-4 sm:-ml-[161px] rounded-lg"
                 />
               </div>
               <p className="text-gray-500 text-sm pt-2">
@@ -32,21 +32,22 @@ export default function Hero() {
               </p>
             </form>
           </div>
-          <div className="m-4 w-full h-auto lg:w-[675px] lg:h-[482px] rounded-3xl border-8 border-black/85  overflow-hidden static lg:absolute lg:-right-24 xl:-right-32">
+          <div className="col-start-8 w-auto h-auto lg:-mr-32 xl:-mr-40 rounded-3xl border-8 border-black/85 overflow-hidden">
             <Image
               src="./images/home-hero.svg"
               alt="Graphics"
-              fill
+              width={675}
+              height={482}
               style={{ objectFit: 'cover' }}
-              className="rounded-l-3xl  "
+              className="rounded-l-3xl overflow-hidden"
             />
           </div>
         </div>
-        <div className="w-full pt-20 flex gap-32 items-center mx-4">
+        <div className="w-full pt-20 flex gap-6 flex-col lg:flex-row justify-between items-center pr-4">
           <p className="tracking-[-0.22px] font-medium">
             Trusted by 1,000+ customers
           </p>
-          <ul className="text-gray-custom-300 w-[1080px] flex items-center justify-between">
+          <ul className="text-gray-custom-300 gap-8 flex justify-between items-center flex-wrap">
             <li>
               <Image
                 src="./images/google.svg"
