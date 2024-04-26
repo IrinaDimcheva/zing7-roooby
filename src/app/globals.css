@@ -8,8 +8,8 @@
     margin: 0 auto;
   }
 }
-/* @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@layer utilities {
+  .horizontal {
+    @apply w-full h-[2px] bg-current opacity-50 mb-4;
   }
-} */
+}

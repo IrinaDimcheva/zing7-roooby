@@ -16,7 +16,7 @@ export default function Hero() {
               cutomers.
             </p>
             <form className="mb-6 w-full">
-              <div className="max-sm:flex flex-col">
+              <div className="max-sm:grid">
                 <input
                   type="text"
                   placeholder="Enter you email"
@@ -24,7 +24,7 @@ export default function Hero() {
                 />
                 <Button
                   label="Try for Free"
-                  className="px-6 py-4 sm:-ml-[161px] rounded-lg"
+                  className="px-[22px] py-[12px] sm:-ml-[148px] rounded-lg"
                 />
               </div>
               <p className="text-gray-500 text-sm pt-2">

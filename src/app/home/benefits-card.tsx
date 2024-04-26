@@ -1,3 +1,4 @@
+import HorizontalLine from '@/components/ui/horizontal-line';
 import Image from 'next/image';
 
 export default function BenefitsCard({
@@ -20,7 +21,7 @@ export default function BenefitsCard({
           className="stroke-white fill-white hover:stroke-black"
         />
       </div>
-      <div className="w-full h-[2px] bg-current opacity-50 mb-4"></div>
+      <HorizontalLine />
       <h4 className="text-xl font-bold tracking-[0.38px] mb-4 w-[95%]">
         {title}
       </h4>

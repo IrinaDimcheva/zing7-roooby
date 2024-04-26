@@ -1,9 +1,9 @@
 export default function Button({
   label = '',
-  color = '',
-  bgColor = '',
-  borderColor = '',
-  textSize = '',
+  color = 'text-white',
+  bgColor = 'bg-primary',
+  borderColor = 'border-primary',
+  textSize = '18',
   className = '',
 }) {
   return (
