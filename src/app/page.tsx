@@ -1,6 +1,7 @@
 import Benefits from '@/app/home/benefits';
 import Hero from '@/app/home/hero';
 import Info from './home/info';
+import Integrations from './home/integrations';
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Benefits />
       <Info />
+      <Integrations />
     </main>
   );
 }

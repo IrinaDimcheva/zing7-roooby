@@ -11,7 +11,7 @@ export default function BenefitsCard({
   description: string;
 }) {
   return (
-    <li className="rounded-2xl px-6 py-16 shadow-xl bg-[#1e085b] hover:bg-accent hover:text-black hover:-translate-y-3 hover:transition-all">
+    <li className="rounded-2xl px-6 py-20 shadow-xl bg-[#1e085b] hover:bg-accent hover:text-black hover:-translate-y-3 hover:transition-all">
       <div className="pb-12 h-32 text-white fill-white stroke-white">
         <Image
           src={image}

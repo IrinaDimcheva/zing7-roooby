@@ -70,9 +70,9 @@ export default function InfoCard({
   );
 
   return (
-    <article className="max-w-screen-wide mx-auto pt-24">
+    <article className="max-w-screen-wide mx-auto pt-24 pb-12 lg:pt-32">
       <HorizontalLine />
-      <div className="grid grid-cols-1 content-center gap-12 lg:grid-cols-2 mt-8">
+      <div className="grid grid-cols-1 content-center gap-12 lg:grid-cols-2 mt-12">
         {isLeft ? (
           <>
             {imageEl} {textEl}

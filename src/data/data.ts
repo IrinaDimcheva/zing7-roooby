@@ -61,3 +61,16 @@ export const info = [
     image: 'images/info3.svg',
   },
 ];
+
+export const integrations = [
+  { image: 'icons/integrations1.svg', width: 120 },
+  { image: 'icons/integrations2.svg', width: 288 },
+  { image: 'icons/integrations3.svg', width: 288 },
+  { image: 'icons/integrations4.svg', width: 120 },
+  { image: 'icons/integrations5.svg', width: 288 },
+  { image: 'icons/integrations6.svg', width: 372 },
+  { image: 'icons/integrations7.svg', width: 120 },
+  { image: 'icons/integrations8.svg', width: 120 },
+  { image: 'icons/integrations9.svg', width: 372 },
+  { image: 'icons/integrations10.svg', width: 120 },
+];

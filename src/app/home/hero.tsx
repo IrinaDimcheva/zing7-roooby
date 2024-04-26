@@ -3,11 +3,11 @@ import Button from '../../components/ui/button';
 
 export default function Hero() {
   return (
-    <section className="bg-secondary pl-4 overflow-hidden">
+    <section className="bg-secondary pl-4 overflow-hidden pb-8">
       <div className="py-20 max-w-screen-wide mx-auto">
         <div className="flex flex-col gap-8 max-lg:pr-4 lg:flex-row justify-center items-center mx-auto">
           <div className="flex flex-col max-lg:justify-center max-lg:items-center max-lg:text-center">
-            <h1 className="text-primary font-bold text-4xl leading-snug sm:text-[54px] xl:text-[64px] xl:leading-[74px] tracking-[-0.89px] md:w-[540px] xl:w-[640px] mb-8">
+            <h1 className="text-primary font-bold text-5xl sm:text-6xl leading-tight tracking-tighter xl:text-[64px] xl:leading-[74px] xl:tracking-[-0.89px] md:w-[540px] xl:w-[640px] mb-8">
               Bringing companies and customers together, anywhere
             </h1>
             <p className="text-lg max-w-[478px] mb-16">
@@ -43,7 +43,7 @@ export default function Hero() {
             />
           </div>
         </div>
-        <div className="w-full pt-20 flex gap-6 flex-col lg:flex-row justify-between items-center pr-4">
+        <div className="w-full pt-24 lg:pt-32 flex gap-6 flex-col lg:flex-row justify-between items-center pr-4">
           <p className="tracking-[-0.22px] font-medium">
             Trusted by 1,000+ customers
           </p>
