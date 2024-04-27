@@ -25,7 +25,7 @@ export default function Integrations() {
             </div>
           ))}
         </div>
-        <div className="text-2xl font-medium">
+        <div className="text-2xl font-medium hover:underline transition-all">
           See all apps and extensions <span>{'>'}</span>{' '}
         </div>
       </div>

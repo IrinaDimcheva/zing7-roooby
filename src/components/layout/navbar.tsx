@@ -1,13 +1,14 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import Button from '../ui/button';
+import { navLinks } from '@/data/data';
 
 export default function Navbar() {
   return (
     <div className="px-4">
       <div className="max-w-screen-wide mx-auto">
         <nav className="flex max-lg:justify-between justify-start gap-24 xl:gap-56 items-center py-8">
-          <Link href="/">
+          <Link href="/product">
             <Image
               src="/images/logo.svg"
               alt="Roooby logo"
@@ -22,21 +23,11 @@ export default function Navbar() {
           </div>
           <div className="flex flex-1 justify-between items-center gap-24 max-lg:hidden">
             <ul className="flex gap-8 font-medium text-sm ">
-              <li>
-                <Link href="/">Product</Link>
-              </li>
-              <li>
-                <Link href="/pricing">Pricing</Link>
-              </li>
-              <li>
-                <Link href="/">Company</Link>
-              </li>
-              <li>
-                <Link href="/">Resources</Link>
-              </li>
-              <li>
-                <Link href="/">Contact</Link>
-              </li>
+              {navLinks.map((item) => (
+                <li key={item.name}>
+                  <Link href={item.href}>{item.name}</Link>
+                </li>
+              ))}
             </ul>
             <div className="flex gap-6">
               <Button

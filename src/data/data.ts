@@ -1,3 +1,26 @@
+export const navLinks = [
+  {
+    name: 'Product',
+    href: '/product',
+  },
+  {
+    name: 'Pricing',
+    href: '/pricing',
+  },
+  {
+    name: 'Company',
+    href: '/company',
+  },
+  {
+    name: 'Blog',
+    href: '/blog',
+  },
+  {
+    name: 'Contact',
+    href: '/contact',
+  },
+];
+
 export const benefits = [
   {
     image: 'images/benefits1.svg',

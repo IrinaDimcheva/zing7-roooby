@@ -56,13 +56,13 @@ export default function InfoCard({
         objectFit="contain"
       />
       {cta && (
-        <div className="bg-primary text-white text-lg font-bold tracking-[-0.25px] p-3 pl-4 rounded-xl max-w-[450px] mx-auto absolute bottom-8 left-2 right-2">
+        <div className="bg-primary text-white text-lg font-bold tracking-[-0.25px] pl-3 py-[9px] rounded-xl max-w-[457px] mx-auto absolute bottom-8 left-0 right-0">
           {cta}
           <Button
             label="Start now"
             bgColor="bg-accent-dark"
             borderColor="border-accent-dark"
-            className="py-3 px-3 ml-6 tracking-[-0.25px]"
+            className="py-[14px] px-[16px] ml-[35px] tracking-[-0.25px]"
           />
         </div>
       )}
