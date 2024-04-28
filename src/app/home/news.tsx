@@ -23,7 +23,7 @@ export default function News() {
   ];
 
   return (
-    <section className="max-w-screen-wide mx-auto px-4 py-24 lg:py-32">
+    <section className="max-w-screen-wide mx-auto px-4 py-24 xl:py-32">
       <div className="flex justify-between items-center">
         <h2 className="font-bold text-5xl sm:text-6xl leading-tight tracking-tighter xl:text-[64px] xl:leading-[74px] xl:tracking-[-0.89px]">
           What’s new at Roooby?
@@ -32,7 +32,7 @@ export default function News() {
           See all <span className="text-accent-dark">{'>'}</span>
         </Link>
       </div>
-      <ul className="grid sm:grid-cols-2 gap-4 py-8">
+      <ul className="grid sm:grid-cols-2 gap-4 pt-8">
         {news.map((item) => (
           <ArticleCard key={item.id} {...item} />
         ))}

@@ -17,6 +17,7 @@ const config: Config = {
           100: '#DCDCDC',
           300: '#787878',
           500: '#404040',
+          600: '#3B3A40',
         },
       },
       screens: {
