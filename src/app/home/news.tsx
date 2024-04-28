@@ -1,4 +1,5 @@
 import ArticleCard from '@/components/layout/article-card';
+import LinkSeeAll from '@/components/ui/link-see-all';
 import Link from 'next/link';
 
 export default function News() {
@@ -28,9 +29,7 @@ export default function News() {
         <h2 className="font-bold text-5xl sm:text-6xl leading-tight tracking-tighter xl:text-[64px] xl:leading-[74px] xl:tracking-[-0.89px]">
           What’s new at Roooby?
         </h2>
-        <Link className="text-xl font-medium hover:underline" href="/blog">
-          See all <span className="text-accent-dark">{'>'}</span>
-        </Link>
+        <LinkSeeAll href="/blog" />
       </div>
       <ul className="grid sm:grid-cols-2 gap-4 pt-8">
         {news.map((item) => (

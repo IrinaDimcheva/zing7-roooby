@@ -97,3 +97,30 @@ export const integrations = [
   { image: 'icons/integrations9.svg', width: 372 },
   { image: 'icons/integrations10.svg', width: 120 },
 ];
+
+export const testimonials = [
+  {
+    text: 'The best thing we love about Yoora is it does two-way sync with Google Apps. It has helped us to better organize and keep everything on track.',
+    author: {
+      image: '/images/lola-ross.png',
+      name: 'Lola Ross',
+      position: 'Marketing Director',
+    },
+  },
+  {
+    text: 'It has made our sales department more effective and efficient. It’s easy to use and it’s constantly updated. It’s easy to use and it’s constantly updated.',
+    author: {
+      image: '/images/daisy-helps.png',
+      name: 'Daisy Phelps',
+      position: 'Speaker and Author, Lifeiseasy',
+    },
+  },
+  {
+    text: 'Easy to use, reasonably priced, and ensures I don’t drop the ball on following up with my leads!',
+    author: {
+      image: '/images/andrew-wilkins.png',
+      name: 'Andrew Wilkins',
+      position: 'Managing Director, Nirma Studio',
+    },
+  },
+];

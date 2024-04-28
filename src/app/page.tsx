@@ -4,6 +4,7 @@ import Info from './home/info';
 import Integrations from './home/integrations';
 import News from './home/news';
 import Results from './home/results';
+import Testimonials from './home/testimonials';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Integrations />
       <News />
       <Results />
+      <Testimonials />
     </main>
   );
 }
