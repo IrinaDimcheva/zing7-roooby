@@ -124,3 +124,128 @@ export const testimonials = [
     },
   },
 ];
+
+export const socials = [
+  {
+    name: 'Twitter',
+    href: '/',
+    icon: '/icons/twitter.svg',
+  },
+  {
+    name: 'Facebook',
+    href: '/',
+    icon: '/icons/facebook.svg',
+  },
+  {
+    name: 'LinkedIn',
+    href: '/',
+    icon: '/icons/linkedin.svg',
+  },
+];
+
+export const footerLinks = [
+  {
+    title: 'Company',
+    links: [
+      {
+        name: 'About',
+        href: '/',
+      },
+      {
+        name: 'Pricing',
+        href: '/pricing',
+      },
+      {
+        name: 'Jobs',
+        href: '/',
+      },
+      {
+        name: 'Blog',
+        href: '/blog',
+      },
+      {
+        name: 'Careers',
+        href: '/',
+      },
+    ],
+  },
+  {
+    title: 'Product',
+    links: [
+      {
+        name: 'Sales software',
+        href: '/',
+      },
+      {
+        name: 'Features',
+        href: '/',
+      },
+      {
+        name: 'Privacy and security',
+        href: '/',
+      },
+      {
+        name: 'Marketplace',
+        href: '/',
+      },
+      {
+        name: 'Status',
+        href: '/',
+      },
+      {
+        name: 'API',
+        href: '/',
+      },
+    ],
+  },
+  {
+    title: 'Discover',
+    links: [
+      {
+        name: 'Partner Program',
+        href: '/',
+      },
+      {
+        name: 'Get our newsletter',
+        href: '/',
+      },
+      {
+        name: 'Sales Pipeline Cours',
+        href: '/',
+      },
+      {
+        name: 'What is CRM?',
+        href: '/',
+      },
+      {
+        name: 'CRM Comparison',
+        href: '/',
+      },
+      {
+        name: 'Resources',
+        href: '/',
+      },
+    ],
+  },
+  {
+    title: 'Help Center',
+    links: [
+      {
+        name: 'Community',
+        href: '/',
+      },
+      {
+        name: 'Knowledge Bas',
+        href: '/',
+      },
+      {
+        name: 'Academy',
+        href: '/',
+      },
+      {
+        name: 'Support',
+        href: '/',
+      },
+    ],
+  },
+];
