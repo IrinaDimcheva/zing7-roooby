@@ -4,6 +4,7 @@ export default function Button({
   bgColor = 'bg-primary',
   borderColor = 'border-primary',
   textSize = '18',
+  icon = '',
   className = '',
 }) {
   return (

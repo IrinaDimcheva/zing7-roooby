@@ -11,14 +11,14 @@ export default function BenefitsCard({
   description: string;
 }) {
   return (
-    <li className="rounded-2xl px-6 py-20 shadow-xl bg-[#1e085b] hover:bg-accent hover:text-black hover:-translate-y-3 hover:transition-all">
-      <div className="pb-12 h-32 text-white fill-white stroke-white">
+    <li className="group block rounded-2xl px-6 py-20 shadow-xl bg-[#1e085b] text-white stroke-white fill-white hover:stroke-black hover:fill-black hover:bg-accent hover:text-black hover:-translate-y-3 hover:transition-all">
+      <div className="pb-12 h-32">
         <Image
           src={image}
           alt={title}
           width={72}
           height={72}
-          className="stroke-white fill-white hover:stroke-black"
+          className="group-hover:invert"
         />
       </div>
       <HorizontalLine />

@@ -5,6 +5,7 @@ import Integrations from './home/integrations';
 import News from './home/news';
 import Results from './home/results';
 import Testimonials from './home/testimonials';
+import CallToAction from '@/components/layout/cta';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <News />
       <Results />
       <Testimonials />
+      <CallToAction />
     </main>
   );
 }
