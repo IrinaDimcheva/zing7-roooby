@@ -1,4 +1,4 @@
-import HorizontalLine from '@/components/ui/horizontal-line';
+import Divider from '@/components/ui/divider';
 import Image from 'next/image';
 
 export default function BenefitsCard({
@@ -21,7 +21,7 @@ export default function BenefitsCard({
           className="group-hover:invert"
         />
       </div>
-      <HorizontalLine />
+      <Divider />
       <h4 className="text-xl font-bold tracking-[0.38px] mb-4 w-[95%]">
         {title}
       </h4>

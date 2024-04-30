@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import HorizontalLine from '../ui/horizontal-line';
+import Divider from '../ui/divider';
 
 interface IArticleCard {
   id: number;
@@ -20,7 +20,7 @@ export default function ArticleCard({
   return (
     <li>
       <p className="text-gray-custom-300 text-sm font-bold uppercase">{tag}</p>
-      <HorizontalLine />
+      <Divider />
       <div className="w-full">
         <Image
           src={image}

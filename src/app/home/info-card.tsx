@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import HorizontalLine from '@/components/ui/horizontal-line';
+import Divider from '@/components/ui/divider';
 import Button from '@/components/ui/button';
 
 interface Info {
@@ -71,7 +71,7 @@ export default function InfoCard({
 
   return (
     <article className="max-w-screen-wide mx-auto pt-24 pb-12 lg:pt-32">
-      <HorizontalLine />
+      <Divider />
       <div className="grid grid-cols-1 content-center gap-12 lg:grid-cols-2 mt-12">
         {isLeft ? (
           <>

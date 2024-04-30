@@ -307,3 +307,26 @@ export const plans = [
     ],
   },
 ];
+
+export const questions = [
+  {
+    title: 'How Does Roooby CRM Compare To The Competition?',
+    text: 'Rooby CRM offers the most affordable, comprehensive platform to manage the entire customer journey, from generating leads, to closing deals and supporting your customers. With a full suite of CRM, sales enablement, marketing automation, and help desk/customer support capabilities, it’s all you need to manage the entire customer lifecycle. Most of our competitors offer one or two of these functions as separate products, leaving you with the headache of integrating them and increasing the overall price point.',
+  },
+  {
+    title: 'Can I Change Plans Or Cancel My Subscription At Any Time?',
+    text: 'With a full suite of CRM, sales enablement, marketing automation, and help desk/customer support capabilities, it’s all you need to manage the entire customer lifecycle. Most of our competitors offer one or two of these functions as separate products, leaving you with the headache of integrating them and increasing the overall price point. Rooby CRM offers the most affordable, comprehensive platform to manage the entire customer journey, from generating leads, to closing deals and supporting your customers.',
+  },
+  {
+    title: 'How Secure Is My Data With Roooby CRM?',
+    text: 'Most of our competitors offer one or two of these functions as separate products, leaving you with the headache of integrating them and increasing the overall price point.Rooby CRM offers the most affordable, comprehensive platform to manage the entire customer journey, from generating leads, to closing deals and supporting your customers. With a full suite of CRM, sales enablement, marketing automation, and help desk/customer support capabilities, it’s all you need to manage the entire customer lifecycle.',
+  },
+  {
+    title: 'What Is The Uptime Guarantee?',
+    text: 'Rooby CRM offers the most affordable, comprehensive platform to manage the entire customer journey, from generating leads, to closing deals and supporting your customers. With a full suite of CRM, sales enablement, marketing automation, and help desk/customer support capabilities, it’s all you need to manage the entire customer lifecycle.',
+  },
+  {
+    title: 'How Can I Add More Emails To My Account?',
+    text: 'With a full suite of CRM, sales enablement, marketing automation, and help desk/customer support capabilities, it’s all you need to manage the entire customer lifecycle. Most of our competitors offer one or two of these functions as separate products, leaving you with the headache of integrating them and increasing the overall price point.',
+  },
+];

@@ -1,5 +1,5 @@
 import Button from '@/components/ui/button';
-import HorizontalLine from '@/components/ui/horizontal-line';
+import Divider from '@/components/ui/divider';
 import Image from 'next/image';
 
 interface IPlan {
@@ -20,7 +20,7 @@ export default function PlanCard({
   excluded,
 }: IPlan) {
   return (
-    <li className="p-8 rounded-xl shadow-sm bg-white">
+    <li className="flex flex-col justify-between p-8 rounded-xl shadow-sm bg-white">
       <div className="flex gap-2 items-center pb-4">
         <h4 className="text-2xl font-bold">{title}</h4>
         {tag && (
@@ -47,32 +47,34 @@ export default function PlanCard({
           bgColor="bg-white"
           color="text-black"
           borderColor="border-gray-custom-100"
-          className="w-full py-3 mb-3 hover:bg-primary hover:text-white hover:border-primary "
+          className="w-full py-3 mb-3 "
         />
       )}
       <p className="text-sm tracking-[0.16px] text-gray-custom-200 pb-8">
         Free 14-day trial. No credit card required.
       </p>
-      <HorizontalLine />
-      <ul className="pt-6">
-        {included.map((item, index) => (
-          <li key={index} className="flex gap-4 pb-4">
-            <Image src="/images/check.svg" alt="/" width={20} height={20} />
-            <p>{item}</p>
-          </li>
-        ))}
-      </ul>
-      <ul>
-        {excluded &&
-          excluded.map((item, index) => (
-            <li key={index} className="flex gap-4 pb-4 opacity-30">
+      <div>
+        <Divider />
+        <ul className="pt-6">
+          {included.map((item, index) => (
+            <li key={index} className="flex gap-4 pb-4">
               <Image src="/images/check.svg" alt="/" width={20} height={20} />
-              <p className="leading-[16px] tracking-[0.18px] line-through">
-                {item}
-              </p>
+              <p>{item}</p>
             </li>
           ))}
-      </ul>
+        </ul>
+        <ul>
+          {excluded &&
+            excluded.map((item, index) => (
+              <li key={index} className="flex gap-4 pb-4 opacity-30">
+                <Image src="/images/check.svg" alt="/" width={20} height={20} />
+                <p className="leading-[16px] tracking-[0.18px] line-through">
+                  {item}
+                </p>
+              </li>
+            ))}
+        </ul>
+      </div>
     </li>
   );
 }

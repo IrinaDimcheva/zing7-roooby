@@ -1,5 +1,5 @@
 import Author, { IAuthor } from '@/components/layout/author';
-import HorizontalLine from '@/components/ui/horizontal-line';
+import Divider from '@/components/ui/divider';
 
 interface IResultItem {
   title: string;
@@ -16,7 +16,7 @@ export default function ResultItem({
 }: IResultItem) {
   return (
     <li className="py-6">
-      <HorizontalLine />
+      <Divider />
       <div className="grid lg:grid-cols-[1fr_2fr] gap-10 lg:gap-2 py-6">
         <div>
           <h2 className="text-[72px] leading-[74px] font-bold tracking[-1px] pb-4">

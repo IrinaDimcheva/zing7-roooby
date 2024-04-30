@@ -1,6 +1,6 @@
 import { plans } from '@/data/data';
 import PlanCard from './plan-card';
-import HorizontalLine from '@/components/ui/horizontal-line';
+import Divider from '@/components/ui/divider';
 import Button from '@/components/ui/button';
 
 export default function Plan() {
@@ -22,7 +22,7 @@ export default function Plan() {
             <PlanCard key={item.title} {...item} />
           ))}
         </ul>
-        <HorizontalLine />
+        <Divider />
         <div className="flex flex-wrap gap-12 justify-center items-center pt-8">
           <h3 className="text-[32px] font-bold leading-[42px] tracking-[-0.44px]">
             Need help choosing the right plan?

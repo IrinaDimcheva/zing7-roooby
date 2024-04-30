@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import { footerLinks, socials } from '@/data/data';
 import Link from 'next/link';
-import HorizontalLine from '../ui/horizontal-line';
+import Divider from '../ui/divider';
+import FooterDropdown from './footer-dropdown';
 
 export default function Footer() {
   return (
@@ -54,7 +55,7 @@ export default function Footer() {
           </div>
         ))}
       </div>
-      <HorizontalLine />
+      <Divider />
       <div className="flex flex-wrap justify-between items-center gap-8 py-8 max-w-screen-wide mx-auto">
         <p>&copy; Copyright 2024</p>
 
@@ -71,12 +72,13 @@ export default function Footer() {
         </ul>
         <p className="flex items-center">
           <Image src="/icons/ic_language.svg" alt="" width={24} height={24} />
-          <span className="pl-2"> English</span>
+          <FooterDropdown />
           <Image
             src="/icons/ic_keyboard_arrow_down.svg"
             alt="choose"
             width={24}
             height={24}
+            className="-ml-5"
           />
         </p>
       </div>

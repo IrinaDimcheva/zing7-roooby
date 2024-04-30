@@ -70,7 +70,7 @@ export default function Navbar() {
               <Link
                 onClick={handleClose}
                 href="/pricing"
-                className="bg-primary text-white px-8 py-[10px] font-bold text-xs rounded-md tracking-[-0.19px]"
+                className="bg-primary border-2 text-white px-8 py-[10px] font-bold text-xs rounded-md tracking-[-0.19px] hover:bg-white hover:text-primary hover:border-primary"
               >
                 Try for Free
               </Link>
@@ -104,7 +104,7 @@ export default function Navbar() {
               />
               <Link
                 href="/pricing"
-                className="bg-primary text-white px-8 py-[10px] font-bold text-xs rounded-md"
+                className="bg-primary border-2 text-white px-8 py-[10px] font-bold text-xs rounded-md tracking-[-0.19px] hover:bg-white hover:text-primary hover:border-primary"
               >
                 Try for Free
               </Link>
