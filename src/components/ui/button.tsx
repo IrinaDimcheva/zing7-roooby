@@ -16,7 +16,7 @@ export default function Button({
         bgColor
           ? `${bgColor} ${color} ${borderColor && `${borderColor} border-2`}`
           : 'bg-primary text-white'
-      }  rounded-md ${textSize} ${className}`}
+      }  rounded-md ${textSize} ${className} tracking-[-0.25px]`}
     >
       {label}
     </button>

@@ -1,3 +1,9 @@
+import Plan from './plan';
+
 export default function PricingPage() {
-  return <div>Pricing Page</div>;
+  return (
+    <main>
+      <Plan />
+    </main>
+  );
 }

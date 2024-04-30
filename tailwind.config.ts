@@ -13,8 +13,10 @@ const config: Config = {
         secondary: '#F4F4F4',
         accent: '#FFE377',
         'accent-dark': '#00CC61',
+        'accent-dark-bg': '#EBFBF3',
         'gray-custom': {
           100: '#DCDCDC',
+          200: '#777777',
           300: '#787878',
           500: '#404040',
           600: '#3B3A40',
