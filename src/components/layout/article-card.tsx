@@ -4,7 +4,7 @@ import Divider from '../ui/divider';
 interface IArticleCard {
   id: number;
   tag: string;
-  image: string;
+  image?: string;
   title: string;
   date: string;
   author: string;
@@ -19,17 +19,21 @@ export default function ArticleCard({
 }: IArticleCard) {
   return (
     <li>
-      <p className="text-gray-custom-300 text-sm font-bold uppercase">{tag}</p>
+      <p className="text-gray-custom-300 text-sm font-bold uppercase pb-4">
+        {tag}
+      </p>
       <Divider />
-      <div className="w-full">
-        <Image
-          src={image}
-          alt={title}
-          width={600}
-          height={500}
-          style={{ objectFit: 'contain' }}
-        />
-      </div>
+      {image && (
+        <div className="w-full mt-6">
+          <Image
+            src={image}
+            alt={title}
+            width={600}
+            height={500}
+            style={{ objectFit: 'contain' }}
+          />
+        </div>
+      )}
       <h4 className="text-2xl lg:text-3xl tracking-[-0.44px] font-bold py-4">
         {title}
       </h4>
@@ -38,5 +42,30 @@ export default function ArticleCard({
         <span>by {author}</span>
       </p>
     </li>
+
+    // <li>
+    //   <p className="text-gray-custom-300 text-sm font-bold uppercase pb-4">
+    //     {tag}
+    //   </p>
+    //   <Divider />
+    //   {image && (
+    //     <div className="w-full mt-6">
+    //       <Image
+    //         src={image}
+    //         alt={title}
+    //         width={600}
+    //         height={500}
+    //         style={{ objectFit: 'contain' }}
+    //       />
+    //     </div>
+    //   )}
+    //   <h4 className="text-2xl lg:text-3xl tracking-[-0.44px] font-bold py-4">
+    //     {title}
+    //   </h4>
+    //   <p>
+    //     <span className="font-medium">{date}, </span>
+    //     <span>by {author}</span>
+    //   </p>
+    // </li>
   );
 }

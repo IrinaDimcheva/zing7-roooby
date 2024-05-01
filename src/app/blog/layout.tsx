@@ -6,7 +6,7 @@ export default function BlogLayout({ children }: { children: ReactNode }) {
   return (
     <main>
       <SubNavigation />
-      {children}
+      <section className="max-w-screen-wide mx-auto px-4">{children}</section>
       <CallToAction />
     </main>
   );

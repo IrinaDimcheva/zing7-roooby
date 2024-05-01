@@ -15,9 +15,9 @@ export default function SubNavigation() {
           <span className="text-gray-custom-200">from our experts</span>
         </h1>
         <ul className="flex flex-wrap gap-4">
-          <li className="text-lg text-gray-custom-200 pb-4">
+          {/* <li className="text-lg text-gray-custom-200 pb-4">
             <Link
-              href={`/blog`}
+              href={`/blog/all`}
               className={`${
                 pathname === '/blog' || pathname === '/blog/'
                   ? 'underline decoration-4 underline-offset-[20px] decoration-accent-dark text-black font-medium'
@@ -26,7 +26,7 @@ export default function SubNavigation() {
             >
               All Articles
             </Link>
-          </li>
+          </li> */}
           {nestedNavLinks.map((item) => (
             <li key={item.name} className="text-lg text-gray-custom-200 pb-4">
               <Link

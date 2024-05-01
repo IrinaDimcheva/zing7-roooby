@@ -25,7 +25,7 @@ export default function News() {
 
   return (
     <section className="max-w-screen-wide mx-auto px-4 py-24 xl:py-32">
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center pb-10">
         <h2 className="font-bold text-5xl sm:text-6xl leading-tight tracking-tighter xl:text-[64px] xl:leading-[74px] xl:tracking-[-0.89px]">
           What’s new at Roooby?
         </h2>

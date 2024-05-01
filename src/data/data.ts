@@ -332,10 +332,10 @@ export const questions = [
 ];
 
 export const nestedNavLinks = [
-  // {
-  //   name: 'All Articles',
-  //   href: '/',
-  // },
+  {
+    name: 'All Articles',
+    href: '/all',
+  },
   {
     name: 'Sales',
     href: '/sales',

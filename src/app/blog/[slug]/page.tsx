@@ -1,9 +1,13 @@
+import BlogList from '../_components/blog-list';
+
 export default function CategoriesPage({
   params,
 }: {
   params: { slug: string };
 }) {
-  console.log(params);
-  const { slug } = params;
-  return <div>{slug}</div>;
+  return (
+    <div>
+      <BlogList slug={params.slug} />
+    </div>
+  );
 }
