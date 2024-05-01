@@ -1,6 +1,6 @@
 import CallToAction from '@/components/layout/cta';
-import Plan from './plan';
-import Questions from './questions';
+import Plan from './_components/plan';
+import Questions from './_components/questions';
 
 export default function PricingPage() {
   return (

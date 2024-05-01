@@ -330,3 +330,30 @@ export const questions = [
     text: 'With a full suite of CRM, sales enablement, marketing automation, and help desk/customer support capabilities, it’s all you need to manage the entire customer lifecycle. Most of our competitors offer one or two of these functions as separate products, leaving you with the headache of integrating them and increasing the overall price point.',
   },
 ];
+
+export const nestedNavLinks = [
+  // {
+  //   name: 'All Articles',
+  //   href: '/',
+  // },
+  {
+    name: 'Sales',
+    href: '/sales',
+  },
+  {
+    name: 'Marketing',
+    href: '/marketing',
+  },
+  {
+    name: 'Service',
+    href: '/service',
+  },
+  {
+    name: 'Product',
+    href: '/product',
+  },
+  {
+    name: 'News',
+    href: '/news',
+  },
+];

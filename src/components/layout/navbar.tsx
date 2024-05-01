@@ -84,9 +84,8 @@ export default function Navbar() {
                   <Link
                     href={item.href}
                     className={`${
-                      pathname === item.href
-                        ? 'underline decoration-2 underline-offset-8'
-                        : ''
+                      pathname.startsWith(item.href) &&
+                      'underline decoration-2 underline-offset-8'
                     }`}
                   >
                     {item.name}
