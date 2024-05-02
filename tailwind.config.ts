@@ -34,7 +34,7 @@ const config: Config = {
         '.container-feed': {
           display: 'grid',
           'grid-template-columns': 'repeat(6, minmax(0, 1fr))',
-          gap: '28px',
+          'column-gap': '28px',
         },
         '.full-row': {
           'grid-column': 'span 6 / span 6',
@@ -51,17 +51,14 @@ const config: Config = {
         '.second-half-1': {
           'grid-column-start': '4',
           'grid-column-end': '-1',
-          // 'grid-row-start': '4',
         },
         '.second-half-2': {
           'grid-column-start': '4',
           'grid-column-end': '-1',
-          // 'grid-row-start': '5',
         },
         '.second-half-3': {
           'grid-column-start': '4',
           'grid-column-end': '-1',
-          // 'grid-row-start': '6',
         },
       });
     }),
