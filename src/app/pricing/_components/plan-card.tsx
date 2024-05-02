@@ -30,7 +30,7 @@ export default function PlanCard({
         )}
       </div>
       <p className="leading-[26px] pb-6">{description}</p>
-      <h2 className="text-[48px] font-bold leading-[58px] tracking-[0.67px] pb-6">
+      <h2 className="headline-h2 pb-6">
         {price}
         <sub className="text-base leading-[26px] text-gray-custom-200">
           /month

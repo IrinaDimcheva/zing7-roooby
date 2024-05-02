@@ -10,7 +10,7 @@ export default function SubNavigation() {
   return (
     <section className="bg-secondary">
       <div className="max-w-screen-wide mx-auto px-4">
-        <h1 className="font-bold text-5xl sm:text-6xl leading-tight tracking-tighter md:text-[64px] md:leading-[74px] md:tracking-[-0.89px] md:w-[652px] md:mb-8 py-24 lg:py-32">
+        <h1 className="font-bold text-5xl sm:text-6xl leading-tight tracking-tighter md:headline-h1 md:w-[652px] md:mb-8 py-24 lg:py-32">
           News and insights{' '}
           <span className="text-gray-custom-200">from our experts</span>
         </h1>

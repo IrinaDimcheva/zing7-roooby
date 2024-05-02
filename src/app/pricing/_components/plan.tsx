@@ -8,7 +8,7 @@ export default function Plan() {
     <section className=" bg-secondary px-8 py-16 sm:py-24">
       <div className="max-w-screen-wide mx-auto">
         <div className="flex flex-col justify-between items-baseline xl:flex-row">
-          <h1 className="font-bold text-5xl sm:text-6xl leading-tight tracking-tighter md:text-[64px] md:leading-[74px] md:tracking-[-0.89px] md:w-[689px] mb-8">
+          <h1 className="font-bold text-5xl sm:text-6xl leading-tight tracking-tighter md:headline-h1 md:w-[689px] mb-8">
             Choose the right plan <br />
             <span className="text-gray-custom-300">for your business</span>
           </h1>

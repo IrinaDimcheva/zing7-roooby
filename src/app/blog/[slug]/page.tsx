@@ -5,9 +5,5 @@ export default function CategoriesPage({
 }: {
   params: { slug: string };
 }) {
-  return (
-    <div>
-      <BlogList slug={params.slug} />
-    </div>
-  );
+  return <BlogList slug={params.slug} />;
 }

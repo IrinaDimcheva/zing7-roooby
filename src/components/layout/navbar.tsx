@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
@@ -10,6 +10,14 @@ import { navLinks } from '@/data/data';
 export default function Navbar() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    if (open) {
+      document.body.classList.add('overflow-y-hidden');
+    }
+
+    return () => document.body.classList.remove('overflow-y-hidden');
+  }, [open]);
 
   function handleClose() {
     setOpen(false);
@@ -47,7 +55,7 @@ export default function Navbar() {
             </button>
           </div>
           {open && (
-            <div className="flex flex-col gap-12 justify-start pt-12 items-center absolute top-20 left-0 w-full h-screen bg-secondary">
+            <div className="flex flex-col gap-12 justify-start pt-12 items-center absolute top-20 left-0 w-full h-screen bg-secondary overflow-hidden overscroll-y-none">
               <ul className="flex flex-col gap-12 justify-start pt-10 items-center">
                 {navLinks.map((item) => (
                   <li key={item.name}>

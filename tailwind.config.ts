@@ -31,6 +31,28 @@ const config: Config = {
   plugins: [
     plugin(function ({ addComponents }) {
       addComponents({
+        '.headline-h1': {
+          fontSize: '64px',
+          fontStyle: 'normal',
+          fontWeight: '700',
+          lineHeight: '74px',
+          letterSpacing: '-0.89px',
+        },
+        '.headline-h2': {
+          fontSize: '48px',
+          fontStyle: 'normal',
+          fontWeight: '700',
+          lineHeight: '58px',
+          letterSpacing: '-0.67px',
+        },
+        '.headline-h4': {
+          fontSize: '30px',
+          fontStyle: 'normal',
+          fontWeight: '700',
+          lineHeight: '42px',
+          letterSpacing: '-0.44px',
+        },
+
         '.container-feed': {
           display: 'grid',
           'grid-template-columns': 'repeat(6, minmax(0, 1fr))',
