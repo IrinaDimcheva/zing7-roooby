@@ -45,6 +45,13 @@ const config: Config = {
           lineHeight: '58px',
           letterSpacing: '-0.67px',
         },
+        '.headline-h3': {
+          fontSize: '40px',
+          fontStyle: 'normal',
+          fontWeight: '700',
+          lineHeight: '50px',
+          letterSpacing: '-0.48px',
+        },
         '.headline-h4': {
           fontSize: '30px',
           fontStyle: 'normal',

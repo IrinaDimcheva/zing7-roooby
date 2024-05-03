@@ -9,7 +9,7 @@ interface IArticle {
   title: string;
   date: string;
   author: string;
-  image: string;
+  image?: string;
   summary: string;
   section1: {
     title: string;
@@ -42,8 +42,8 @@ interface IArticle {
 
 export default function Details(article: IArticle) {
   return (
-    <article className="pb-32">
-      <section className="bg-secondary pt-16 sm:pt-24 md:pt-32 px-4">
+    <article className="pb-12 sm:pb-24">
+      <section className="bg-secondary pt-12 sm:pt-24 md:pt-32 px-8">
         <div className="max-w-[750px] w-full mx-auto">
           <p className="text-gray-custom-300 text-sm font-bold uppercase pb-4">
             {article.tag}
@@ -67,7 +67,7 @@ export default function Details(article: IArticle) {
           </div>
         )}
       </section>
-      <section className="max-w-[750px] w-full mx-auto py-12 sm:py-24 px-4">
+      <section className="max-w-[750px] w-full mx-auto py-12 sm:py-24 px-8">
         <section>
           <p className="text-lg sm:text-2xl sm:leading-[34px] font-medium tracking-[-0.33px] pb-8 sm:pb-12">
             {article.summary}

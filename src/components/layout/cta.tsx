@@ -4,7 +4,7 @@ export default function CallToAction() {
   return (
     <section className="bg-primary overflow-hidden">
       <div className="grid lg:grid-cols-[2fr_1fr] min-h-[468px] max-w-screen-wide mx-auto">
-        <div className="px-4 min-h-[468px]">
+        <div className="px-8 min-h-[468px]">
           <h2 className="text-4xl text-white font-bold tracking-[0.15px] sm:text-5xl md:headline-h1 sm:w-[640px] md:w-[730px] lg:w-[773px] mb-8 pt-32">
             Ready to supercharge your business?
           </h2>
