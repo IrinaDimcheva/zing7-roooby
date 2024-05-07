@@ -37,10 +37,9 @@ export default function MessageForm() {
       message: '',
     },
   });
-  console.log('errors', errors);
 
   function onSubmit(data: FormValues) {
-    console.log('data', data);
+    // console.log('data', data);
     reset();
     toast.success('Message sent!');
   }

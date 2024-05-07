@@ -6,7 +6,7 @@ export default function FooterDropdown() {
   const [value, setValue] = useState('en');
 
   return (
-    <div>
+    <span>
       <select
         value={value}
         onChange={(e) => setValue(e.target.value)}
@@ -15,6 +15,6 @@ export default function FooterDropdown() {
         <option value="en">English</option>
         <option value="bg">Bulgarian</option>
       </select>
-    </div>
+    </span>
   );
 }
