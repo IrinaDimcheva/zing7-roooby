@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Button from '../../../components/ui/button';
+import Partners from '@/components/layout/partners';
 
 export default function Hero() {
   return (
@@ -24,7 +25,7 @@ export default function Hero() {
                 />
                 <Button
                   label="Try for Free"
-                  className="px-[22px] py-[12px] sm:-ml-[148px] rounded-lg"
+                  className="px-[22px] py-[12px] sm:-ml-[148px] rounded-lg hover:bg-white hover:text-primary hover:border-primary"
                 />
               </div>
               <p className="text-gray-500 text-sm pt-2">
@@ -47,48 +48,7 @@ export default function Hero() {
           <p className="tracking-[-0.22px] font-medium">
             Trusted by 1,000+ customers
           </p>
-          <ul className="text-gray-custom-300 gap-8 flex justify-between items-center flex-wrap">
-            <li>
-              <Image
-                src="./images/google.svg"
-                alt="Google"
-                width={97}
-                height={20}
-              />
-            </li>
-            <li>
-              <Image
-                src="./images/atlassian.svg"
-                alt="Atlassian"
-                width={97}
-                height={20}
-              />
-            </li>
-            <li>
-              <Image
-                src="./images/canon.svg"
-                alt="Cannon"
-                width={97}
-                height={20}
-              />
-            </li>
-            <li>
-              <Image
-                src="./images/walmart.svg"
-                alt="Walmart"
-                width={97}
-                height={20}
-              />
-            </li>
-            <li>
-              <Image
-                src="./images/amazon.svg"
-                alt="Amazon"
-                width={97}
-                height={20}
-              />
-            </li>
-          </ul>
+          <Partners />
         </div>
       </div>
     </section>

@@ -33,9 +33,12 @@ export default function Plan() {
               bgColor="bg-white"
               color="text-black"
               borderColor="border-gray-custom-100"
-              className="max-[460px]:w-full py-4"
+              className="max-[460px]:w-full py-4 hover:bg-white hover:text-primary hover:border-primary"
             />
-            <Button label="Compare plans" className="max-[460px]:w-full py-4" />
+            <Button
+              label="Compare plans"
+              className="max-[460px]:w-full py-4 hover:bg-white hover:text-primary hover:border-primary"
+            />
           </div>
         </div>
       </div>

@@ -10,6 +10,9 @@ import { navLinks } from '@/data/data';
 export default function Navbar() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const scrollbarSize =
+    typeof window !== 'undefined' &&
+    window.innerWidth - document.body.offsetWidth;
 
   useEffect(() => {
     if (open) {
@@ -50,12 +53,13 @@ export default function Navbar() {
                   alt="menu"
                   width={24}
                   height={24}
+                  className={`${scrollbarSize && `mr-[${scrollbarSize}px]`}`}
                 />
               )}
             </button>
           </div>
           {open && (
-            <div className="flex flex-col gap-12 justify-start pt-12 items-center absolute top-20 left-0 w-full h-screen bg-secondary overflow-hidden overscroll-y-none">
+            <div className="flex flex-col gap-12 justify-start pt-12 items-center absolute top-20 left-0 w-full h-screen bg-secondary overflow-hidden overscroll-y-none z-50">
               <ul className="flex flex-col gap-12 justify-start pt-10 items-center">
                 {navLinks.map((item) => (
                   <li key={item.name}>
@@ -108,6 +112,7 @@ export default function Navbar() {
                 color="text-black"
                 borderColor="border-gray-custom-100"
                 textSize="text-xs"
+                className="hover:bg-white hover:text-primary hover:border-primary"
               />
               <Link
                 href="/pricing"

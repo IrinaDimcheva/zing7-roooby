@@ -39,7 +39,7 @@ export default function PlanCard({
       {tag ? (
         <Button
           label="Try for Free"
-          className="w-full py-3 mb-3 hover:bg-white hover:text-primary"
+          className="w-full py-3 mb-3 hover:bg-white hover:text-primary hover:border-primary"
         />
       ) : (
         <Button
@@ -47,7 +47,7 @@ export default function PlanCard({
           bgColor="bg-white"
           color="text-black"
           borderColor="border-gray-custom-100"
-          className="w-full py-3 mb-3 "
+          className="w-full py-3 mb-3 hover:bg-white hover:text-primary hover:border-primary"
         />
       )}
       <p className="text-sm tracking-[0.16px] text-gray-custom-200 pb-8">

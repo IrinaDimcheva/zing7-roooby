@@ -62,7 +62,7 @@ export default function InfoCard({
             label="Start now"
             bgColor="bg-accent-dark"
             borderColor="border-accent-dark"
-            className="py-[14px] px-[16px] ml-[35px] tracking-[-0.25px]"
+            className="py-[14px] px-[16px] ml-[35px] tracking-[-0.25px] hover:border-white"
           />
         </div>
       )}

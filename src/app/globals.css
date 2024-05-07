@@ -8,3 +8,9 @@
     margin: 0 auto;
   }
 }
+
+@layer components {
+  .error {
+    @apply py-2 px-4 text-sm rounded-md bg-red-200 text-red-600;
+  }
+}

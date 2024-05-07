@@ -12,7 +12,7 @@ export default function Button({
   return (
     <button
       onClick={onClick}
-      className={`px-8 py-2 font-bold hover:bg-white hover:text-primary hover:border-primary ${
+      className={`px-8 py-2 font-bold ${
         bgColor
           ? `${bgColor} ${color} ${borderColor && `${borderColor} border-2`}`
           : 'bg-primary text-white'
