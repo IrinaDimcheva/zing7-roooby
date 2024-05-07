@@ -12,7 +12,6 @@ export default function Map() {
       center={[42.16258, 24.74343]}
       zoom={15}
       scrollWheelZoom={true}
-      // style={{ height: '288px', width: '458px' }}
       className="w-full min-w-[340px] h-auto min-h-[244px] sm:h-[288px] sm:w-[458px] -z-0"
     >
       <TileLayer

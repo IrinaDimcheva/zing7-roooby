@@ -48,13 +48,7 @@ export default function InfoCard({
 
   const imageEl = (
     <div className="w-full max-w-[555px] max-h-[555px] max-lg:order-1 relative">
-      <Image
-        src={image}
-        alt={title}
-        width={555}
-        height={555}
-        objectFit="contain"
-      />
+      <Image src={image} alt={title} width={555} height={555} />
       {cta && (
         <div className="bg-primary text-white text-lg font-bold tracking-[-0.25px] pl-3 py-[9px] rounded-xl max-w-[457px] mx-auto absolute bottom-8 left-0 right-0">
           {cta}

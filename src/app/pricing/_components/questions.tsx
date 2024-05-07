@@ -5,10 +5,10 @@ import { questions } from '@/data/data';
 import QuestionItem from './question-item';
 
 export default function Questions() {
-  const [active, setActive] = useState(null);
+  const [active, setActive] = useState(-1);
 
-  function handleToggle(index) {
-    setActive((prevIndex) => (prevIndex === index ? null : index));
+  function handleToggle(index: number) {
+    setActive((prevIndex) => (prevIndex === index ? -1 : index));
   }
   return (
     <section className="max-w-screen-wide mx-auto px-4 py-20 sm:py-24">

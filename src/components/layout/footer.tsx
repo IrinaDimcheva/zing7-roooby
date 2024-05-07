@@ -73,13 +73,13 @@ export default function Footer() {
         <p className="flex items-center">
           <Image src="/icons/ic_language.svg" alt="" width={24} height={24} />
           <FooterDropdown />
-          <Image
+          {/* <Image
             src="/icons/ic_keyboard_arrow_down.svg"
             alt="choose"
             width={24}
             height={24}
             className="-ml-5"
-          />
+          /> */}
         </p>
       </div>
     </footer>
