@@ -1,4 +1,4 @@
-import ArticleCard from '@/components/layout/article-card-old';
+import ArticleCardOld from '@/components/layout/article-card-old';
 import LinkSeeAll from '@/components/ui/link-see-all';
 
 export default function News() {
@@ -32,7 +32,7 @@ export default function News() {
       </div>
       <ul className="grid sm:grid-cols-2 gap-4 pt-8">
         {news.map((item) => (
-          <ArticleCard key={item.id} {...item} />
+          <ArticleCardOld key={item.id} {...item} />
         ))}
       </ul>
     </section>

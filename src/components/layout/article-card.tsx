@@ -51,7 +51,6 @@ export default function ArticleCard({
                   alt={title}
                   width={600}
                   height={500}
-                  style={{ objectFit: 'contain' }}
                 />
               </div>
             )}
@@ -107,7 +106,6 @@ export default function ArticleCard({
               alt={title}
               width={600}
               height={500}
-              style={{ objectFit: 'contain' }}
             />
           </div>
         )}

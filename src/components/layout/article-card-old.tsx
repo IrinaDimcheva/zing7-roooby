@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Divider from '../ui/divider';
 import Link from 'next/link';
 
-interface IArticleCard {
+interface IArticleCardOld {
   id: number;
   tag: string;
   image?: string;
@@ -12,7 +12,7 @@ interface IArticleCard {
   index?: number | undefined;
 }
 
-export default function ArticleCard({
+export default function ArticleCardOld({
   id,
   tag,
   image,
@@ -20,7 +20,7 @@ export default function ArticleCard({
   date,
   author,
   index,
-}: IArticleCard) {
+}: IArticleCardOld) {
   if (index === 0) {
     return (
       <li className="hover:scale-95 transition-all">
@@ -46,13 +46,7 @@ export default function ArticleCard({
             </div>
             {image && (
               <div className="w-full">
-                <Image
-                  src={image}
-                  alt={title}
-                  width={600}
-                  height={500}
-                  style={{ objectFit: 'contain' }}
-                />
+                <Image src={image} alt={title} width={600} height={500} />
               </div>
             )}
           </div>
@@ -100,13 +94,7 @@ export default function ArticleCard({
         <Divider />
         {image && (
           <div className="w-full mt-6">
-            <Image
-              src={image}
-              alt={title}
-              width={600}
-              height={500}
-              style={{ objectFit: 'contain' }}
-            />
+            <Image src={image} alt={title} width={600} height={500} />
           </div>
         )}
         <h4 className="text-2xl lg:text-3xl tracking-[-0.44px] font-bold py-4">

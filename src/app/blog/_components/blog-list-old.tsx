@@ -21,7 +21,7 @@ function BlogList({ slug }: { slug: string }) {
             index === 10 && 'md:second-half-3'
           }`}
         >
-          <ArticleCard {...item} index={index} />
+          {/* <ArticleCard {...item} index={index} /> */}
         </div>
       ))}
     </ul>
