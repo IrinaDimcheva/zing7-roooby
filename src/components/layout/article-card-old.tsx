@@ -4,10 +4,11 @@ import Link from 'next/link';
 
 interface IArticleCard {
   id: number;
-  tag?: string;
-  image?: JSONPlaceholder.Photo;
+  tag: string;
+  image?: string;
   title: string;
-  author?: JSONPlaceholder.User;
+  date: string;
+  author: string;
   index?: number | undefined;
 }
 
@@ -16,6 +17,7 @@ export default function ArticleCard({
   tag,
   image,
   title,
+  date,
   author,
   index,
 }: IArticleCard) {
@@ -36,10 +38,8 @@ export default function ArticleCard({
               </div>
               <div className="md:-mb-4">
                 <p className="pb-6">
-                  <span className="font-medium">
-                    {new Date().toDateString()},{' '}
-                  </span>
-                  <span>by {author?.name}</span>
+                  <span className="font-medium">{date}, </span>
+                  <span>by {author}</span>
                 </p>
                 <Divider />
               </div>
@@ -47,7 +47,7 @@ export default function ArticleCard({
             {image && (
               <div className="w-full">
                 <Image
-                  src={image.thumbnailUrl}
+                  src={image}
                   alt={title}
                   width={600}
                   height={500}
@@ -78,10 +78,8 @@ export default function ArticleCard({
             </div>
             <div className="flex justify-between">
               <p>
-                <span className="font-medium">
-                  {new Date().toDateString()},{' '}
-                </span>
-                <span>by {author?.name}</span>
+                <span className="font-medium">{date}, </span>
+                <span>by {author}</span>
               </p>
               <p className="text-gray-custom-300 text-sm font-bold uppercase">
                 {tag}
@@ -103,7 +101,7 @@ export default function ArticleCard({
         {image && (
           <div className="w-full mt-6">
             <Image
-              src={image.thumbnailUrl}
+              src={image}
               alt={title}
               width={600}
               height={500}
@@ -115,8 +113,8 @@ export default function ArticleCard({
           {title}
         </h4>
         <p>
-          <span className="font-medium">{new Date().toDateString()}, </span>
-          <span>by {author?.name}</span>
+          <span className="font-medium">{date}, </span>
+          <span>by {author}</span>
         </p>
       </Link>
     </li>

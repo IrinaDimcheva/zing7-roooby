@@ -1,6 +1,5 @@
-import ArticleCard from '@/components/layout/article-card';
+import ArticleCard from '@/components/layout/article-card-old';
 import LinkSeeAll from '@/components/ui/link-see-all';
-import Link from 'next/link';
 
 export default function News() {
   const news = [
